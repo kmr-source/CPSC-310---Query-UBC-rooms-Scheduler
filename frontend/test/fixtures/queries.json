@@ -1,0 +1,136 @@
+{
+    "query1":{"WHERE": {"IS": {"courses_dept": "cpsc"} },
+        "OPTIONS": {
+            "COLUMNS": ["courses_dept", "courses_id"],
+            "ORDER": { "dir": "UP" , "keys": ["courses_id"]} }},
+    "query2":{"WHERE": {"NOT" :{"EQ":  {"courses_avg": 89}}}, "OPTIONS": {"COLUMNS": ["courses_avg", "courses_instructor"]}},
+    "query3":{"WHERE":  {"NOT": {"LT": {"courses_avg": 89}} }, "OPTIONS": {"COLUMNS": ["courses_avg", "courses_instructor"]}},
+    "query4":{"WHERE": {"IS": {"rooms_name": "DMP"} }, "OPTIONS": {"COLUMNS": ["rooms_name"], "ORDER": {"dir": "UP","keys":["rooms_name"]}} },
+    "query5":{"WHERE": { "AND": [{"NOT": {"LT":  {"courses_avg":  89}}}, {"EQ":  {"courses_fail": 3} }]}, "OPTIONS": {"COLUMNS": ["courses_year"]}},
+    "query6":{
+        "WHERE": {
+            "AND": [
+                {"NOT": {"LT":  {"courses_avg":  89}}},
+                {"EQ":  {"courses_fail": 3} }
+            ]},
+        "OPTIONS": {
+            "COLUMNS": ["courses_year"],
+            "ORDER" : {
+                "dir": "DOWN",
+                "keys" : ["courses_year"]
+            }
+        }},
+    "query7": {
+        "WHERE": {
+            "GT": { "courses_avg": 70 }
+        },
+        "OPTIONS": {
+            "COLUMNS": [],
+            "ORDER" : {
+                "dir": "DOWN",
+                "keys" : ["courses_title"]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["courses_title"],
+            "APPLY": [{
+                "overallAvg": {
+                    "AVG": "courses_avg"
+                }
+            }]
+        }
+    },
+    "query8": {
+        "WHERE": {
+            "AND" : [
+                {"GT": { "courses_avg": 70 }},
+                {"IS":  {"courses_instructor":  "AAAAHHHHH"}}
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_title"],
+            "ORDER" : {
+                "dir": "DOWN",
+                "keys" : ["courses_title"]
+            }
+        }
+    },
+    "query9": {
+        "WHERE": {
+            "OR" : [
+                {"GT": { "courses_avg": 70 }},
+                {"IS":  {"courses_instructor":  "AAAAHHHHH"}}
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_title"],
+            "ORDER" : {
+                "dir": "DOWN",
+                "keys" : ["courses_title"]
+            }
+        }
+    },
+    "query10": {
+        "WHERE": {
+            "NOT": {
+                "OR" : [
+                    {"GT": { "courses_avg": 70 }},
+                    {"IS":  {"courses_instructor":  "AAAAHHHHH"}}
+                ]
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_title"],
+            "ORDER" : {
+                "dir": "UP",
+                "keys" : ["courses_title"]
+            }
+        }
+    },
+    "query11": {
+        "WHERE": {
+            "GT": { "courses_avg": 70 }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_title", "overallAvg", "minAvg"],
+            "ORDER" : {
+                "dir": "UP",
+                "keys" : ["courses_title"]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["courses_title"],
+            "APPLY": [{
+                "overallAvg": {
+                    "AVG": "courses_avg"
+                }
+            },{
+                "minAvg": {
+                    "MIN": "courses_avg"
+                }
+            }]
+        }
+    },
+    "query12":{
+        "WHERE": {
+            "IS": {"courses_dept": "cpsc"} },
+        "OPTIONS": {
+            "COLUMNS": ["courses_audit", "courses_avg"],
+            "ORDER": { "dir": "UP" , "keys": ["courses_audit", "courses_avg"]} }
+    },
+    "query13":{
+        "WHERE": { "NOT": { "OR": [
+            {"IS": {"courses_dept": "cpsc"} },
+            {"EQ": {"courses_avg" : 99}}
+        ] } },
+        "OPTIONS": {
+            "COLUMNS": ["courses_audit", "courses_avg"],
+            "ORDER": { "dir": "UP" , "keys": ["courses_audit", "courses_avg"]} }
+    },
+    "query14":{
+    "WHERE": {},
+    "OPTIONS": {
+        "COLUMNS": ["courses_title"],
+        "ORDER": { "dir": "UP" , "keys": ["courses_title"]} }
+    }
+}
