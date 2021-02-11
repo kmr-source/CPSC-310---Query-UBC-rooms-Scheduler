@@ -1,0 +1,38 @@
+{
+    "title": "Advanced Aggregation Query",
+    "query": {
+        "WHERE": {
+            "AND": [{
+                "IS": {
+                    "rooms_furniture": "*Tables*"
+                }
+            }, {
+                "GT": {
+                    "rooms_seats": 300
+                }
+            }]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "rooms_lat",
+                "rooms_name",
+                "maxSeats"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": ["maxSeats"]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["rooms_shortname", "rooms_name", "rooms_lat"],
+            "APPLY": [{
+                "maxSeats": {
+                    "MAX": "rooms_seats"
+                }
+            }]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_shortname":"OSBO","rooms_lat":49.26047,"rooms_name":"OSBO_A","maxSeats":442},{"rooms_shortname":"HEBB","rooms_lat":49.2661,"rooms_name":"HEBB_100","maxSeats":375},{"rooms_shortname":"LSC","rooms_lat":49.26236,"rooms_name":"LSC_1001","maxSeats":350},{"rooms_shortname":"LSC","rooms_lat":49.26236,"rooms_name":"LSC_1002","maxSeats":350}]
+}

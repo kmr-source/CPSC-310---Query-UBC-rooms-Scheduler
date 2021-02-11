@@ -1,0 +1,15 @@
+{
+    "title": "invalid SCOMPARISON with Null",
+    "query": {
+        "WHERE": {
+            "IS": {"courses_dept":null}
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

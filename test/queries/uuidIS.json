@@ -1,0 +1,25 @@
+{
+    "title": "uuid IS",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_uuid": "12183"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_uuid",
+                "courses_year"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"anth","courses_id":"217","courses_avg":73.91,"courses_instructor":"moore, patrick","courses_title":"culture & commnc","courses_pass":75,"courses_fail":4,"courses_audit":1,"courses_uuid":"12183","courses_year":2014}]}

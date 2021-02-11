@@ -1,0 +1,25 @@
+{
+    "title": "test having Columns not in ORDER keys",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor",
+                "courses_avg",
+                "courses_dept"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "courses_avg"
+                ]
+            }
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_instructor":"","courses_avg":99.78,"courses_dept":"math"},{"courses_instructor":"gomez, jose","courses_avg":99.78,"courses_dept":"math"},{"courses_instructor":"cox, daniel","courses_avg":99.19,"courses_dept":"cnps"},{"courses_instructor":"","courses_avg":98.98,"courses_dept":"spph"},{"courses_instructor":"frank, erica","courses_avg":98.98,"courses_dept":"spph"},{"courses_instructor":"grow, laura","courses_avg":98.8,"courses_dept":"epse"},{"courses_instructor":"grow, laura","courses_avg":98.76,"courses_dept":"epse"},{"courses_instructor":"","courses_avg":98.76,"courses_dept":"epse"},{"courses_instructor":"coria, lino","courses_avg":98.75,"courses_dept":"eece"},{"courses_instructor":"","courses_avg":98.75,"courses_dept":"eece"},{"courses_instructor":"brew, nancy","courses_avg":98.71,"courses_dept":"nurs"},{"courses_instructor":"","courses_avg":98.71,"courses_dept":"nurs"},{"courses_instructor":"cole, kenneth","courses_avg":98.7,"courses_dept":"epse"},{"courses_instructor":"grow, laura","courses_avg":98.58,"courses_dept":"epse"},{"courses_instructor":"","courses_avg":98.58,"courses_dept":"epse"},{"courses_instructor":"","courses_avg":98.58,"courses_dept":"nurs"},{"courses_instructor":"","courses_avg":98.58,"courses_dept":"nurs"},{"courses_instructor":"","courses_avg":98.5,"courses_dept":"nurs"},{"courses_instructor":"burrows, marlene;harding, jillian;krist, jennifer;mccuaig, fairleth","courses_avg":98.5,"courses_dept":"nurs"},{"courses_instructor":"cannon, joanna","courses_avg":98.45,"courses_dept":"epse"},{"courses_instructor":"","courses_avg":98.45,"courses_dept":"epse"},{"courses_instructor":"","courses_avg":98.36,"courses_dept":"epse"},{"courses_instructor":"krist, jennifer","courses_avg":98.21,"courses_dept":"nurs"},{"courses_instructor":"","courses_avg":98.21,"courses_dept":"nurs"},{"courses_instructor":"cole, kenneth","courses_avg":98.08,"courses_dept":"epse"},{"courses_instructor":"grady, albert wayne","courses_avg":98,"courses_dept":"crwr"},{"courses_instructor":"maillard, keith","courses_avg":98,"courses_dept":"crwr"},{"courses_instructor":"amaral, deborah;ford, laurie","courses_avg":97.78,"courses_dept":"epse"},{"courses_instructor":"grow, laura","courses_avg":97.69,"courses_dept":"epse"},{"courses_instructor":"porath, marion","courses_avg":97.67,"courses_dept":"epse"},{"courses_instructor":"burrows, marlene;harding, jillian;krist, jennifer;mccuaig, fairleth","courses_avg":97.53,"courses_dept":"nurs"},{"courses_instructor":"","courses_avg":97.53,"courses_dept":"nurs"},{"courses_instructor":"morgan, tannis","courses_avg":97.5,"courses_dept":"educ"},{"courses_instructor":"","courses_avg":97.48,"courses_dept":"math"},{"courses_instructor":"karu, kalle","courses_avg":97.48,"courses_dept":"math"},{"courses_instructor":"neault, roberta a","courses_avg":97.47,"courses_dept":"cnps"},{"courses_instructor":"","courses_avg":97.47,"courses_dept":"cnps"},{"courses_instructor":"","courses_avg":97.41,"courses_dept":"epse"},{"courses_instructor":"wilk, diana","courses_avg":97.41,"courses_dept":"epse"},{"courses_instructor":"brew, nancy","courses_avg":97.33,"courses_dept":"nurs"},{"courses_instructor":"","courses_avg":97.33,"courses_dept":"nurs"},{"courses_instructor":"","courses_avg":97.29,"courses_dept":"epse"},{"courses_instructor":"cole, kenneth","courses_avg":97.29,"courses_dept":"epse"},{"courses_instructor":"fraser, ailana","courses_avg":97.25,"courses_dept":"math"},{"courses_instructor":"","courses_avg":97.25,"courses_dept":"math"},{"courses_instructor":"","courses_avg":97.09,"courses_dept":"math"},{"courses_instructor":"laba, izabella","courses_avg":97.09,"courses_dept":"math"},{"courses_instructor":"","courses_avg":97.09,"courses_dept":"epse"},{"courses_instructor":"kishor, nand","courses_avg":97.09,"courses_dept":"epse"}]
+}

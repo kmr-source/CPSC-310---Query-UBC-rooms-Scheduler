@@ -1,0 +1,15 @@
+{
+    "title": "invalid SCOMPARISON with invalid ID",
+    "query": {
+        "WHERE": {
+            "IS": {"courses_once":90}
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

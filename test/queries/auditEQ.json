@@ -1,0 +1,25 @@
+{
+    "title": "audit EQ",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_audit": 8
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_uuid",
+                "courses_year"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"comm","courses_id":"295","courses_avg":73.86,"courses_instructor":"","courses_title":"managerial econ","courses_pass":662,"courses_fail":4,"courses_audit":8,"courses_uuid":"57760","courses_year":1900},{"courses_dept":"epse","courses_id":"683","courses_avg":90.8,"courses_instructor":"zumbo, bruno","courses_title":"hier lin modelng","courses_pass":10,"courses_fail":0,"courses_audit":8,"courses_uuid":"76367","courses_year":2009},{"courses_dept":"epse","courses_id":"683","courses_avg":90.8,"courses_instructor":"","courses_title":"hier lin modelng","courses_pass":10,"courses_fail":0,"courses_audit":8,"courses_uuid":"76368","courses_year":1900},{"courses_dept":"frst","courses_id":"430","courses_avg":82.95,"courses_instructor":"","courses_title":"adv biometrics","courses_pass":21,"courses_fail":1,"courses_audit":8,"courses_uuid":"89596","courses_year":1900},{"courses_dept":"germ","courses_id":"100","courses_avg":79.45,"courses_instructor":"","courses_title":"begin germ i","courses_pass":510,"courses_fail":17,"courses_audit":8,"courses_uuid":"17949","courses_year":1900},{"courses_dept":"germ","courses_id":"100","courses_avg":78.54,"courses_instructor":"","courses_title":"begin germ i","courses_pass":553,"courses_fail":9,"courses_audit":8,"courses_uuid":"31798","courses_year":1900},{"courses_dept":"micb","courses_id":"302","courses_avg":67.66,"courses_instructor":"","courses_title":"immunology","courses_pass":166,"courses_fail":26,"courses_audit":8,"courses_uuid":"17474","courses_year":1900},{"courses_dept":"rhsc","courses_id":"505","courses_avg":77,"courses_instructor":"tba","courses_title":"meas in practice","courses_pass":3,"courses_fail":0,"courses_audit":8,"courses_uuid":"21798","courses_year":2010},{"courses_dept":"rhsc","courses_id":"505","courses_avg":85.58,"courses_instructor":"","courses_title":"meas in practice","courses_pass":19,"courses_fail":0,"courses_audit":8,"courses_uuid":"76500","courses_year":1900}]}

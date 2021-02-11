@@ -1,0 +1,17 @@
+{
+    "title": "invalid multiple filters at once",
+    "query": {
+        "WHERE": {"GT": {
+            "courses_avg": 97
+        }, "LT": {
+            "courses_avg": 50
+        }},
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

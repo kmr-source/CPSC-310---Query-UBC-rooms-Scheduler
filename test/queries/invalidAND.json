@@ -1,0 +1,13 @@
+{
+    "title": "invalid AND",
+    "query": {
+        "WHERE": {"AND":{}},
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

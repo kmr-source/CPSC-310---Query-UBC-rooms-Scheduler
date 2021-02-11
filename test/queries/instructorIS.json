@@ -1,0 +1,25 @@
+{
+    "title": "instructor IS",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_instructor": "moore, patrick"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_uuid",
+                "courses_year"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"anth","courses_id":"217","courses_avg":73.91,"courses_instructor":"moore, patrick","courses_title":"culture & commnc","courses_pass":75,"courses_fail":4,"courses_audit":1,"courses_uuid":"12183","courses_year":2014},{"courses_dept":"anth","courses_id":"217","courses_avg":72.91,"courses_instructor":"moore, patrick","courses_title":"culture & commnc","courses_pass":78,"courses_fail":3,"courses_audit":0,"courses_uuid":"13164","courses_year":2007},{"courses_dept":"anth","courses_id":"217","courses_avg":72.47,"courses_instructor":"moore, patrick","courses_title":"culture & commnc","courses_pass":71,"courses_fail":3,"courses_audit":1,"courses_uuid":"25166","courses_year":2015},{"courses_dept":"anth","courses_id":"217","courses_avg":73.17,"courses_instructor":"moore, patrick","courses_title":"culture & commnc","courses_pass":61,"courses_fail":3,"courses_audit":0,"courses_uuid":"59923","courses_year":2013},{"courses_dept":"anth","courses_id":"332","courses_avg":77.18,"courses_instructor":"moore, patrick","courses_title":"oral tradition","courses_pass":33,"courses_fail":1,"courses_audit":0,"courses_uuid":"69714","courses_year":2010},{"courses_dept":"anth","courses_id":"332","courses_avg":77.08,"courses_instructor":"moore, patrick","courses_title":"oral tradition","courses_pass":37,"courses_fail":1,"courses_audit":0,"courses_uuid":"86232","courses_year":2011},{"courses_dept":"anth","courses_id":"378","courses_avg":77.4,"courses_instructor":"moore, patrick","courses_title":"visual media","courses_pass":52,"courses_fail":0,"courses_audit":0,"courses_uuid":"69723","courses_year":2010},{"courses_dept":"anth","courses_id":"378","courses_avg":74.33,"courses_instructor":"moore, patrick","courses_title":"anth of media","courses_pass":65,"courses_fail":4,"courses_audit":0,"courses_uuid":"86238","courses_year":2011},{"courses_dept":"anth","courses_id":"378","courses_avg":77.1,"courses_instructor":"moore, patrick","courses_title":"anth of media","courses_pass":58,"courses_fail":1,"courses_audit":0,"courses_uuid":"91528","courses_year":2012},{"courses_dept":"anth","courses_id":"516","courses_avg":88.67,"courses_instructor":"moore, patrick","courses_title":"qualitative meth","courses_pass":12,"courses_fail":0,"courses_audit":2,"courses_uuid":"13239","courses_year":2007}]}

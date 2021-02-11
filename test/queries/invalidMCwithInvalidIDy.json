@@ -1,0 +1,15 @@
+{
+    "title": "invalid MCOMPARISON with invalid ID",
+    "query": {
+        "WHERE": {
+            "LT": {"courses_SSSSHHHHH":90}
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

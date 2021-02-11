@@ -1,0 +1,22 @@
+{
+    "title": "invalid query empty Key Array in ORDER",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": []
+            }
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,15 @@
+{
+    "title": "invalid MCOMPARISON with invalid key",
+    "query": {
+        "WHERE": {
+            "LT": {"AAAHHHH_avg":90}
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

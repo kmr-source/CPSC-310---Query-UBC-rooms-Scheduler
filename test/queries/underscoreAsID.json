@@ -1,0 +1,15 @@
+{
+    "title": "underscore as id",
+    "query": {
+        "WHERE": {
+            "LT": {"__avg":90}
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

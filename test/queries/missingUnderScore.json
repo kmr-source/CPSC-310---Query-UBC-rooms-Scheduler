@@ -1,0 +1,15 @@
+{
+    "title": "invalid missing underscore",
+    "query": {
+        "WHERE": {
+            "LT": {"courses":90}
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

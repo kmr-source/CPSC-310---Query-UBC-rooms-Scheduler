@@ -1,0 +1,17 @@
+{
+    "title": "invalid wildcard two asterisks",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_instructor": "**"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "ResultTooLargeError"
+}

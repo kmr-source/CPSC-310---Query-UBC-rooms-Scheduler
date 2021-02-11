@@ -1,0 +1,26 @@
+{
+    "title": "wildcard back",
+    "query":{
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 80
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "o*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"obst","courses_avg":86.33},{"courses_dept":"obst","courses_avg":86.33},{"courses_dept":"obst","courses_avg":89.14},{"courses_dept":"obst","courses_avg":89.14},{"courses_dept":"obst","courses_avg":87.78},{"courses_dept":"obst","courses_avg":87.78},{"courses_dept":"obst","courses_avg":86.75},{"courses_dept":"obst","courses_avg":86.75},{"courses_dept":"obst","courses_avg":84.71},{"courses_dept":"obst","courses_avg":84.71},{"courses_dept":"obst","courses_avg":86.09},{"courses_dept":"obst","courses_avg":86.09},{"courses_dept":"obst","courses_avg":83.5},{"courses_dept":"obst","courses_avg":83.5},{"courses_dept":"obst","courses_avg":87.25},{"courses_dept":"obst","courses_avg":87.25},{"courses_dept":"obst","courses_avg":85.67},{"courses_dept":"obst","courses_avg":85.67},{"courses_dept":"obst","courses_avg":83.13},{"courses_dept":"obst","courses_avg":83.13},{"courses_dept":"obst","courses_avg":83.88},{"courses_dept":"obst","courses_avg":83.88},{"courses_dept":"obst","courses_avg":81},{"courses_dept":"obst","courses_avg":81},{"courses_dept":"obst","courses_avg":83.63},{"courses_dept":"obst","courses_avg":83.63},{"courses_dept":"obst","courses_avg":89.5},{"courses_dept":"obst","courses_avg":89.5},{"courses_dept":"obst","courses_avg":87.17},{"courses_dept":"obst","courses_avg":87.17},{"courses_dept":"obst","courses_avg":86.4},{"courses_dept":"obst","courses_avg":86.4},{"courses_dept":"obst","courses_avg":90.33},{"courses_dept":"obst","courses_avg":90.33},{"courses_dept":"obst","courses_avg":88.67},{"courses_dept":"obst","courses_avg":88.67},{"courses_dept":"obst","courses_avg":87.55},{"courses_dept":"obst","courses_avg":87.55},{"courses_dept":"obst","courses_avg":86.75},{"courses_dept":"obst","courses_avg":86.75},{"courses_dept":"obst","courses_avg":85.4},{"courses_dept":"obst","courses_avg":85.4},{"courses_dept":"obst","courses_avg":93},{"courses_dept":"obst","courses_avg":93},{"courses_dept":"obst","courses_avg":84.5},{"courses_dept":"obst","courses_avg":86},{"courses_dept":"obst","courses_avg":90},{"courses_dept":"obst","courses_avg":82.5},{"courses_dept":"obst","courses_avg":87},{"courses_dept":"obst","courses_avg":89},{"courses_dept":"obst","courses_avg":89},{"courses_dept":"obst","courses_avg":85},{"courses_dept":"obst","courses_avg":91},{"courses_dept":"obst","courses_avg":88.75},{"courses_dept":"obst","courses_avg":95},{"courses_dept":"obst","courses_avg":88.5},{"courses_dept":"obst","courses_avg":88.5},{"courses_dept":"onco","courses_avg":90.82},{"courses_dept":"onco","courses_avg":90.82},{"courses_dept":"onco","courses_avg":89.94},{"courses_dept":"onco","courses_avg":89.94},{"courses_dept":"onco","courses_avg":91.74},{"courses_dept":"onco","courses_avg":91.74},{"courses_dept":"onco","courses_avg":93.07},{"courses_dept":"onco","courses_avg":93.07},{"courses_dept":"onco","courses_avg":92.61},{"courses_dept":"onco","courses_avg":92.61},{"courses_dept":"onco","courses_avg":90.78},{"courses_dept":"onco","courses_avg":90.78},{"courses_dept":"onco","courses_avg":90.58},{"courses_dept":"onco","courses_avg":90.58},{"courses_dept":"onco","courses_avg":85.41},{"courses_dept":"onco","courses_avg":85.41},{"courses_dept":"onco","courses_avg":83.45},{"courses_dept":"onco","courses_avg":83.45}]}

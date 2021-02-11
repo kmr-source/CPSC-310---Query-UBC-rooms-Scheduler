@@ -1,0 +1,15 @@
+{
+    "title": "invalid SCOMPARISON with invalid key",
+    "query": {
+        "WHERE": {
+            "IS": {"somebody_dept":90}
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

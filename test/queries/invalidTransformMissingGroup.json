@@ -1,0 +1,21 @@
+{
+    "title": "invalid missing group",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 90
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "APPLY": [
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

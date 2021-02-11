@@ -1,0 +1,24 @@
+{
+    "title": "wildcard front",
+    "query": {
+        "WHERE": {
+            "AND": [{
+                "GT": {
+                    "courses_avg": 98
+                }
+            },
+                {
+                    "IS": {
+                        "courses_dept": "*h"
+                    }
+                }]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"math"},{"courses_dept":"math"},{"courses_dept":"spph"},{"courses_dept":"spph"}]}

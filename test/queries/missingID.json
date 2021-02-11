@@ -1,0 +1,15 @@
+{
+    "title": "invalid missing ID",
+    "query": {
+        "WHERE": {
+            "LT": {"courses_":90}
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

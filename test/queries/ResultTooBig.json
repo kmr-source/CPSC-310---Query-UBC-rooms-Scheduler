@@ -1,0 +1,6 @@
+{
+    "title": "results too big",
+    "query": { "WHERE":{}, "OPTIONS" :{"COLUMNS":["courses_dept"]}},
+    "isQueryValid": false,
+    "result": "ResultTooLargeError"
+}

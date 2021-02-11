@@ -1,0 +1,13 @@
+{
+    "title": "invalid NOT",
+    "query": {
+        "WHERE": {"NOT":{}},
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

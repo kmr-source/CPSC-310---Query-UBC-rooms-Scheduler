@@ -1,0 +1,25 @@
+{
+    "title": "fail EQ",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_fail": 50
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_uuid",
+                "courses_year"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"bioc","courses_id":"302","courses_avg":68.09,"courses_instructor":"","courses_title":"general biochem","courses_pass":489,"courses_fail":50,"courses_audit":0,"courses_uuid":"32588","courses_year":1900},{"courses_dept":"bioc","courses_id":"302","courses_avg":68.69,"courses_instructor":"","courses_title":"general biochem","courses_pass":495,"courses_fail":50,"courses_audit":0,"courses_uuid":"39334","courses_year":1900},{"courses_dept":"busi","courses_id":"293","courses_avg":66.86,"courses_instructor":"","courses_title":"intr fncl acct","courses_pass":206,"courses_fail":50,"courses_audit":0,"courses_uuid":"66724","courses_year":1900},{"courses_dept":"chem","courses_id":"121","courses_avg":59.83,"courses_instructor":"addison, christopher;lekhi, priya","courses_title":"structural chem","courses_pass":140,"courses_fail":50,"courses_audit":0,"courses_uuid":"31189","courses_year":2013},{"courses_dept":"chem","courses_id":"121","courses_avg":61.54,"courses_instructor":"mcintosh, lawrence","courses_title":"strctr bond chem","courses_pass":157,"courses_fail":50,"courses_audit":0,"courses_uuid":"89213","courses_year":2015},{"courses_dept":"japn","courses_id":"100","courses_avg":70.66,"courses_instructor":"","courses_title":"begin japn i","courses_pass":500,"courses_fail":50,"courses_audit":5,"courses_uuid":"93525","courses_year":1900},{"courses_dept":"math","courses_id":"101","courses_avg":65,"courses_instructor":"ghioca, dragos","courses_title":"int calc ap ph s","courses_pass":273,"courses_fail":50,"courses_audit":0,"courses_uuid":"47007","courses_year":2014},{"courses_dept":"math","courses_id":"105","courses_avg":68.65,"courses_instructor":"","courses_title":"int calc ap c&ss","courses_pass":780,"courses_fail":50,"courses_audit":0,"courses_uuid":"29745","courses_year":1900},{"courses_dept":"math","courses_id":"220","courses_avg":67.83,"courses_instructor":"","courses_title":"math proof","courses_pass":343,"courses_fail":50,"courses_audit":0,"courses_uuid":"34054","courses_year":1900},{"courses_dept":"math","courses_id":"255","courses_avg":66.48,"courses_instructor":"","courses_title":"ord diff equtns","courses_pass":277,"courses_fail":50,"courses_audit":0,"courses_uuid":"5245","courses_year":1900}]}
