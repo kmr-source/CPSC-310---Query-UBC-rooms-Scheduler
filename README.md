@@ -36,3 +36,46 @@ WebStorm should be automatically configured the first time you open the project 
 
 # Purpose 
 This project is a TypeScript-based course scheduler built for CPSC 310 at UBC. It allows users to query and manage scheduling data such as courses and room availability. Core features include parsing .zip datasets, filtering based on user-specified criteria, and generating optimal room schedules. It uses a modular design, automated testing with Mocha/Chai, and follows principles of RESTful service design.
+
+## 🛠️ Core Stack
+
+* **TypeScript** – for both backend and frontend logic, bringing strong typing to JavaScript 
+* **Node.js** – provides the server runtime environment .
+
+## 🧩 Dataset Handling
+
+* **jszip** – to handle compressing and decompressing ZIP datasets .
+* **fs-extra** – for enhanced file system operations like reading, writing, and managing files 
+
+## 🔌 Web Server & API
+
+* **restify** (or Express.js in some variations) – builds the RESTful API layer for dataset management and querying .
+
+## 📦 Package Manager & Build Tools
+
+* **Yarn** – used for dependency management
+* **ts-node** & **tsconfig** – compile and run TypeScript seamlessly 
+
+## ✅ Testing
+
+* **Mocha** – testing framework.
+* **Chai** (with chai-as-promised) – assertion library for both synchronous and asynchronous code 
+* **@ubccpsc310/folder-test** and optionally **nyc** – for organizing tests and measuring code coverage 
+
+## 🧩 Frontend
+
+* **Vanilla JavaScript** – often used in initial checkpoints 
+* **Next.js** (in some implementations) – a React-based framework for more advanced front‑ends .
+
+---
+
+### 🔁 Typical Workflow
+
+1. **Ingest** ZIP files (courses or rooms).
+2. **Parse & store** data locally (no external DB).
+3. **Process** user queries (filter, sort, group).
+4. **Serve** results via a REST API.
+5. **Test** all endpoints and data operations using Mocha/Chai.
+
+---
+
