@@ -33,3 +33,6 @@ In the project folder:
 ## Running and testing from an IDE
 
 WebStorm should be automatically configured the first time you open the project (WebStorm is a free download through their students program). For other IDEs and editors, you'll want to set up test and debug tasks and specify that the schema of all files in `test/queries` should follow `test/query.schema.json`.
+
+# Purpose 
+This project is a TypeScript-based course scheduler built for CPSC 310 at UBC. It allows users to query and manage scheduling data such as courses and room availability. Core features include parsing .zip datasets, filtering based on user-specified criteria, and generating optimal room schedules. It uses a modular design, automated testing with Mocha/Chai, and follows principles of RESTful service design.
