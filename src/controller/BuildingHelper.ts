@@ -6,7 +6,7 @@ import {InsightDatasetKind} from "./IInsightFacade";
 import GeolocationHandler from "./GeolocationHandler";
 import BuildingTools from "./BuildingTools";
 
-const fs = require("fs");
+const fs = require("fs"); 
 interface IBuildingAttributes {
     fullName: string;
     shortName: string;
