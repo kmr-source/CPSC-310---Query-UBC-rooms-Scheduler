@@ -3,7 +3,7 @@ import * as fs from "fs-extra";
 import {InsightDataset, InsightDatasetKind, InsightError, NotFoundError} from "../src/controller/IInsightFacade";
 import InsightFacade from "../src/controller/InsightFacade";
 import Log from "../src/Util";
-import TestUtil from "./TestUtil";
+import TestUtil from "./TestUtil"; 
 import GeolocationHandler from "../src/controller/GeolocationHandler";
 import Scheduler from "../src/scheduler/Scheduler";
 import {SchedRoom, SchedSection} from "../src/scheduler/IScheduler";
