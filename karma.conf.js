@@ -1,5 +1,5 @@
 module.exports = function(config) {
-    config.set({
+    config.set({ 
         basePath: "",
         frameworks: ["mocha", "chai", "fixture"],
         files: [
